@@ -1,0 +1,23 @@
+NOTICE
+======
+
+INSTRUCT_JEV — a TypeSafe AI Jev / System One instruction corpus.
+Copyright (c) 2026 DeckerGUI (https://deckergui.my). MIT licensed (see LICENSE).
+
+Upstream attribution
+--------------------
+The source documentation, concepts, API design and examples compiled in this
+repository are the work of TypeSafe AI (https://typesafe.ai) and are used and
+redistributed under their MIT-licensed public documentation at
+https://docs.typesafe.ai.
+
+Jev, System One, and the Choice / Noul / Score primitives are TypeSafe AI's.
+
+Credits
+-------
+- TypeSafe AI  — Jev / System One, Choice / Noul / Score primitives, source docs
+- DeckerGUI    — compilation, dataset and tooling (https://deckergui.my)
+- KrackedDevs  — community credit and support
+- CTECX        — knowledge / corpus partner
+
+See README.md ("Credits") and CONTRIBUTORS.md for the full list.

@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Upstream notice (TypeSafe AI):
-The source documentation, concepts, API design and examples compiled in this
-repository are the work of TypeSafe AI (https://typesafe.ai) and are used and
-redistributed under their MIT-licensed public documentation at
-https://docs.typesafe.ai. Jev, System One, and the Choice / Noul / Score
-primitives are TypeSafe AI's. See README.md "Credits" and CONTRIBUTORS.md for
-full attribution.

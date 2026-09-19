@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Large non-text browser captures (not corpus sources)
+_pdf/
+_webpage/
+_avif-file/
+_webp/
+
+# Partial downloads
+*.download
+*.crdownload
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

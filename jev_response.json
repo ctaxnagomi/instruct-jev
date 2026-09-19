@@ -1,0 +1,15 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "is_sandwich": {
+      "type": "noul",
+      "noul": 0.14,
+      "stats": {}
+    }
+  },
+  "usage": {
+    "input_tokens": 390,
+    "output_tokens": 23
+  },
+  "request_id": "playground_1e3a21e02e80aec4b5294807cb196feafc3",
+  "evaluation_time_ms": 99.31083099999682

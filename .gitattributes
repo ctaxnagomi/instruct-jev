@@ -1,0 +1,8 @@
+# Keep everything LF in the repo (dataset files are line-oriented).
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.webp binary
+*.avif binary

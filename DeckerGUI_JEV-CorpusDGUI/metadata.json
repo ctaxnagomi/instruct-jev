@@ -1,0 +1,70 @@
+{
+  "dataset": "INSTRUCT_JEV",
+  "title": "INSTRUCT_JEV",
+  "pretty_name": "INSTRUCT_JEV - TypeSafe AI Jev / System One Instruction Corpus",
+  "description": "INSTRUCT_JEV is an instruction corpus built from the TypeSafe AI documentation for Jev, the first System One model. Every row is an instruction / input / output example over the three TypeSafe question primitives - choice, noul and score. Corpus and concepts are the property of TypeSafe AI. Jev, System One, and the Choice / Noul / Score primitives are TypeSafe's. Used and redistributed under their MIT-licensed public documentation. Compiled by DeckerGUI.",
+  "attribution": {
+    "credit": "TypeSafe AI - https://typesafe.ai",
+    "note": "Corpus and concepts are the property of TypeSafe AI. Jev, System One, and the Choice / Noul / Score primitives are TypeSafe's. Used and redistributed under their MIT-licensed public documentation. Compiled by DeckerGUI.",
+    "source": "TypeSafe AI documentation (Jev / System One)",
+    "source_url": "https://docs.typesafe.ai",
+    "license": "MIT"
+  },
+  "publisher": "DeckerGUI",
+  "compiled_by": "DeckerGUI",
+  "license": "MIT",
+  "version": "1.0.0",
+  "function_types": [
+    "choice",
+    "noul",
+    "score"
+  ],
+  "structure": "Mirrors deckerGUI-jev_corpus_RAW; each row is tagged with one of the three TypeSafe System One function types.",
+  "generated_from": "deckerGUI-jev_corpus_RAW",
+  "generated_utc": "2026-09-19T06:14:17.345824+00:00",
+  "repo": "ctaxnagomi/INSTRUCT_JEV",
+  "stats": {
+    "rows": 119,
+    "per_function_type": {
+      "choice": 47,
+      "noul": 51,
+      "score": 21
+    },
+    "per_category": {
+      "_demos": 9,
+      "_patterns": 18,
+      "_primitives": 30,
+      "_typesafe_foundations": 25,
+      "root": 37
+    },
+    "source_files": 128,
+    "unique_source_files": 114,
+    "duplicates_skipped": 14,
+    "rows_with_question_block": 24,
+    "rows_with_answers": 7
+  },
+  "schema": {
+    "id": "int - sequential row id",
+    "dataset": "string - INSTRUCT_JEV",
+    "instruction": "string - the task / question",
+    "input": "string - context or state",
+    "output": "string or json - the expected answer",
+    "state": "json or null - TypeSafe state when available",
+    "question_block": "json or null - typed Choice/Noul/Score question objects",
+    "answer_block": "json or null - typed answers",
+    "question_count": "int - number of questions in the block",
+    "has_answer": "bool - whether a typed answer block was extracted",
+    "model": "string - model alias shown in docs (jev-latest)",
+    "function_type": "string - choice | noul | score",
+    "doc_title": "string",
+    "section": "string",
+    "category": "string",
+    "source": "string - raw corpus relative path",
+    "tags": "array",
+    "credit": "string"
+  },
+  "integration": {
+    "raw_corpus": "deckerGUI-jev_corpus_RAW",
+    "build_dir": "DeckerGUI_JEV-CorpusDGUI"
+  }
+}

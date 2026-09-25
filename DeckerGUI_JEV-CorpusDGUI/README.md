@@ -82,8 +82,8 @@ Every row is tagged with one of the three TypeSafe System One function types:
 
 ## Stats
 
-- Rows: **119**
-- choice: **47** / noul: **51** / score: **21**
+- Rows: **122**
+- choice: **49** / noul: **51** / score: **22**
 - Rows with an extracted typed question block: **24** (of which **7** include typed answers)
 - Unique source documents: **114** (from 128 captured files)
 

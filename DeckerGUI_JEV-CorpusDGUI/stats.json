@@ -1,15 +1,16 @@
 {
-  "rows": 119,
+  "rows": 122,
   "per_function_type": {
-    "choice": 47,
+    "choice": 49,
     "noul": 51,
-    "score": 21
+    "score": 22
   },
   "per_category": {
     "_demos": 9,
     "_patterns": 18,
     "_primitives": 30,
     "_typesafe_foundations": 25,
+    "knowledge": 3,
     "root": 37
   },
   "source_files": 128,

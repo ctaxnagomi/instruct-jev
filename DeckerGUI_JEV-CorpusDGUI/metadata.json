@@ -21,20 +21,21 @@
   ],
   "structure": "Mirrors deckerGUI-jev_corpus_RAW; each row is tagged with one of the three TypeSafe System One function types.",
   "generated_from": "deckerGUI-jev_corpus_RAW",
-  "generated_utc": "2026-09-19T06:14:17.345824+00:00",
+  "generated_utc": "2026-09-25T09:12:06.359726+00:00",
   "repo": "ctaxnagomi/INSTRUCT_JEV",
   "stats": {
-    "rows": 119,
+    "rows": 122,
     "per_function_type": {
-      "choice": 47,
+      "choice": 49,
       "noul": 51,
-      "score": 21
+      "score": 22
     },
     "per_category": {
       "_demos": 9,
       "_patterns": 18,
       "_primitives": 30,
       "_typesafe_foundations": 25,
+      "knowledge": 3,
       "root": 37
     },
     "source_files": 128,

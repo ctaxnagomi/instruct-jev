@@ -597,6 +597,47 @@ def main() -> None:
         encoding="utf-8",
     )
 
+    # Add SEO / AEO / GEO knowledge rows for MCP users
+    seo_rows = [
+        {
+            "instruction": "Explain SEO (Search Engine Optimization) for AI agent MCP servers.",
+            "input": "SEO for MCP servers",
+            "output": "SEO for MCP servers involves optimizing landing pages, metadata, and content to rank in search engines. Key techniques: semantic HTML with heading hierarchy, descriptive meta tags (title, description, keywords), structured data (JSON-LD SoftwareApplication schema), fast edge caching via Cloudflare Workers, mobile-responsive design with safe-area-insets, and content matching user search intent. For DGUI-HyperMem: semantic <section> elements, aria labels, alt text on logos, structured data for software schema.",
+            "state": {"topic": "SEO", "context": "MCP server optimization"},
+            "question_block": None, "answer_block": None, "question_count": 0, "has_answer": False,
+            "model": "jev-latest", "function_type": "choice", "doc_title": "SEO/AEO/GEO Knowledge",
+            "section": "Search Engine Optimization", "category": "knowledge",
+            "source": "built-in", "tags": ["seo", "search-engine", "discovery", "landing-page"],
+            "credit": CREDIT, "credit_note": CREDIT_NOTE,
+        },
+        {
+            "instruction": "Explain AEO (Answer Engine Optimization) for AI agent discovery.",
+            "input": "AEO for AI agents",
+            "output": "AEO structures content so AI answer engines (Google SGE, Bing Chat, Perplexity, Claude, ChatGPT) extract and surface it directly. For MCP servers: (1) Provide clear service descriptions in natural language, (2) Use JSON-LD SoftwareApplication schema, (3) Maintain an llms.txt file for AI crawlers, (4) Write AGENTS.md for coding agents, (5) Answer common questions directly in documentation. Our landing page states 'a self-hosted hybrid memory MCP server for AI agents with JEV reasoning' which directly answers discovery queries.",
+            "state": {"topic": "AEO", "context": "AI agent discovery optimization"},
+            "question_block": None, "answer_block": None, "question_count": 0, "has_answer": False,
+            "model": "jev-latest", "function_type": "choice", "doc_title": "SEO/AEO/GEO Knowledge",
+            "section": "Answer Engine Optimization", "category": "knowledge",
+            "source": "built-in", "tags": ["aeo", "answer-engine", "ai-discovery", "llms-txt"],
+            "credit": CREDIT, "credit_note": CREDIT_NOTE,
+        },
+        {
+            "instruction": "Explain GEO (Generative Engine Optimization) for AI agent marketplaces.",
+            "input": "GEO for AI agents",
+            "output": "GEO targets generative AI systems that synthesize answers from multiple sources. For MCP servers: (1) Being referenced in AI training corpora (INSTRUCT_JEV dataset on HuggingFace), (2) Listing MCP tools in agent skill marketplaces, (3) Building integrations with LangChain, Vercel AI SDK, opencode, (4) Maintaining GitHub repos with README, CONTRIBUTING, AGENTS.md for AI coding agents, (5) Getting mentioned in AI publications. ROI: each integration increases agent invocations, growing dataset size and JEV accuracy in a self-reinforcing flywheel.",
+            "state": {"topic": "GEO", "context": "Generative engine optimization"},
+            "question_block": None, "answer_block": None, "question_count": 0, "has_answer": False,
+            "model": "jev-latest", "function_type": "score", "doc_title": "SEO/AEO/GEO Knowledge",
+            "section": "Generative Engine Optimization", "category": "knowledge",
+            "source": "built-in", "tags": ["geo", "generative-engine", "marketplace", "discovery", "roi"],
+            "credit": CREDIT, "credit_note": CREDIT_NOTE,
+        },
+    ]
+    for i, row in enumerate(seo_rows):
+        row["id"] = next_id + 1 + i
+    rows.extend(seo_rows)
+    next_id += len(seo_rows)
+
     (BUILD_DIR / "train.jsonl").write_text(
         "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n",
         encoding="utf-8",

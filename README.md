@@ -64,8 +64,8 @@ INSTRUCT_JEV is a **DeckerGUI** project.
 |-----|--------------|------|
 | **TypeSafe AI** | Jev — the first System One model — and the Choice / Noul / Score primitives. Author of the documentation this corpus is built from. | <https://typesafe.ai> · <https://docs.typesafe.ai> |
 | **DeckerGUI** | Compiled the corpus into instruction rows; published the dataset and tooling. | <https://deckergui.my> |
-| **KrackedDevs** | Community credit and support. | KrackedDevs |
-| **CTECX** | Knowledge / corpus partner. | CTECX |
+| **KrackedDevs** | Community credit and support. | <https://KrackedDevs.com> |
+| **CTECX** | Knowledge / corpus partner. | CTECX | <https://ctecx.deckergui.com> |
 
 > Corpus and concepts are the property of **TypeSafe AI**. *Jev*, *System One*, and the
 > *Choice / Noul / Score* primitives are TypeSafe AI's and are used and redistributed under
